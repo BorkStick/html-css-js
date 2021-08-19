@@ -1,11 +1,18 @@
 @font-face {
     font-family: myGill;
     src: url(./assets/fonts/gill-rb.TTF);
-  }
+}
+
+@font-face {
+    font-family: myFut;
+    src: url(./assets/fonts/FuturaStd-Heavy.otf);
+}
+
 
 .test {
     display: flex;
 }
+
 .card {
     background-color: #FDD118;
     width: 500px;
@@ -16,8 +23,13 @@
 .inner-card {
     background-color: #8AB937;
     margin: 20px;
-    padding: 30px;
-    
+    padding: 5px 20px;
+    height: 90%;
+    border-radius: 2px;
+    background:
+      linear-gradient(rgba(0, 121, 0, 0.671), rgba(195, 195, 195, 0.5)),
+      url('./assets/img/noise.svg');
+
 }
 
 
@@ -25,6 +37,11 @@
 .card-header {
     display: flex;
     justify-content: space-between;
+    margin: 0px;
+}
+
+.pokemon-class {
+    font-weight: 600;
 }
 
 .pokemon-name {
@@ -37,6 +54,7 @@
     display: flex;
     align-items: center;
 }
+
 .pokemon-hp {
     font-size: 30px;
     font-weight: 600;
@@ -49,58 +67,70 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 0px;
+    padding-bottom: 60px;
 }
 
-.pokemon-image img{
+.pokemon-image img {
     align-items: center;
     width: 50%;
     height: 100%;
-    border:10px solid #FDD118 ;
+    border: 10px solid #FDD118;
     padding: 20px 90px;
     padding-bottom: 0px;
     box-shadow: 5px 5px 5px #000;
+    margin-bottom: 0px;
 }
 
 .img-caption {
     font-size: 16px;
     font-weight: 600;
-    background-color: #C79403;
-    padding-top: 0px;
+    background: radial-gradient(circle, rgba(255,253,141,1) 0%, rgba(215,158,19,1) 100%);
+    padding: 4px 30px;
     margin-top: 0px;
+
 }
 
 .moves {
     display: flex;
     padding-bottom: 40px;
+    align-items: center;
 }
+
 .move-cost-symbols {
     display: flex;
+}
+
+.first-move {
+    padding: 0px 10px;
 }
 
 .move-name {
     font-size: 20px;
     font-weight: 700;
+    font-family: myGill, sans-serif;
+    
 }
 
 
 .move-damage {
     font-size: 35px;
-    font-weight: 500;
+    font-weight: 100;
+    font-family: myFut, sans-serif;
+    padding-left: 40px;
 
 }
 
 .stats {
     display: flex;
     justify-content: space-around;
-    
+
 }
 
 .flavor-text {
     font-size: 12px;
     font-weight: 600;
     padding: 0px 5px;
-    border:2px solid #FDD118 ;
+    border: 2px solid #FDD118;
 }
 
 .footer {
