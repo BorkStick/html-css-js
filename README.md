@@ -1,6 +1,8 @@
 # html-css-js
 
 A collection of small projects using HTML CSS and JS
+
+[VIEW PROJECTS](https://borkstick.github.io/html-css-js/)
 ## Done
 [Tip Calculator](/tip-calculator-project/index.html)
 
