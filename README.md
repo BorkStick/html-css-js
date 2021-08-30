@@ -15,7 +15,7 @@ A collection of small projects using HTML CSS and JS
 
 [Dice Roller WIP](/dice-roller/index.html)
 
-[Pokeman CardW WIP](/pokemon-card/index.html)
+[Pokeman Card WIP](/pokemon-card/index.html)
 
 [Pokemon API WIP](/pokemans/index.html)
 

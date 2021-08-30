@@ -1,0 +1,26 @@
+.hex-container {}
+
+
+
+.hex {
+    position: relative;
+    display: inline-block;
+    /* transform: rotate(30deg); */
+    color: #6C6;
+    font-size: 135px;
+    padding: 0px 10px;
+    user-select: none;
+}
+
+#hex-test {
+    
+}
+
+
+
+
+.hex-container p {
+    font-size: 50px;
+}
+
+.hex-container {}
