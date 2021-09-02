@@ -1,0 +1,14 @@
+body {
+    background-color: #1d1d1d;
+    
+}
+
+.card {
+    margin: 25% auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+
+.row {
+    --bs-gutter-x: 0;
+}
