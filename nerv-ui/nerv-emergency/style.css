@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+  background-color: #000;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.kanji-container {
+  display: flex;
+  
+  flex-direction: row;
+  align-items: center;
+}
+
+#kanji-top {
+  color: red;
+  
+  text-align: center;
+  font-size: 100px;
+}
+
+#kanji-bottom {
+  color: red;
+  
+  text-align: center;
+  font-size: 100px;
+}
+.kanji-pipe {
+  background-color: red;
+  height: 35%;
+  width: 15px;
+  margin: 0 10px;
+}
+/* 
+.stripe-container {
+  z-index: -1;
+  
+  display: flex;
+  width: 100%;
+  height: 80%;
+}
+
+.stripe-left {
+  width: 50%;
+  height: 50%;
+  background: repeating-linear-gradient(
+    45deg,
+    black,
+    red 40px,
+    black 40px,
+    red 80px
+  );
+}
+.stripe-right {
+  width: 50%;
+  height: 50%;
+  background: repeating-linear-gradient(
+    -45deg,
+    black,
+    red 40px,
+    black 40px,
+    red 80px
+  );
+} */
+
+#scroll-container {
+    
+  overflow: hidden;
+  width: 100%;
+}
+
+#scroll-underline {
+  background-color: red;
+  
+  width: 100%;
+  height: 10px;
+}
+
+#scroll-text {
+  color: red;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 150px;
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+
+  -moz-animation: my-animation 8s linear infinite;
+  -webkit-animation: my-animation 8s linear infinite;
+  animation: my-animation 8s linear infinite;
+}
+
+.blink-me {
+  animation: blinker 1s linear infinite;
+}
+
+.off-blink {
+  animation: offblinker 1s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+  }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from {
+    -webkit-transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes offblinker {
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
